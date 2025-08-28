@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    /* CORES */
+    --azul-escuro: #2D5D9F;   /* cor principal */
+    --azul-claro: #5DB1FF;    /* destaque */
+    --amarelo: #FFD166;       /* ponto de atenção */
+    --roxo: #7F3FBF;          /* contraste */
+    --verde: #4ADE80;         /* opcional */
+
+    /* FONTES */
+    --texto:'Noto Serif', Georgia, 'Times New Roman', serif;
+    --destaque:'Oswald', 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: var(--texto);
+    background-color: rgba(93, 177, 255, 0.25); /* leve e suave */
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--azul-escuro), #1C3A6E);
+    color: white;
+    text-align: center;
+    font-family: var(--destaque);
+    padding: 30px 0px;
+}
+
+nav{
+    background-color: #1C3A6E;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: var(--azul-claro);
+    color: var(--roxo);
+}
+
+main{
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.493);
+}
+
+img{
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    border-radius:50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;;
+}
+article h2{
+    font-family: var(--destaque);
+    font-size: 1.5em;
+}
+article{
+    font-family: var(--texto);
+}
+section{
+    text-align: center;
+}
+section button{
+    background-color: var(--azul-escuro);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--destaque);
+    font-size: 1.3em;
+    width: 40%;
+    max-width: 150px;
+    font-weight: 600;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    transition-duration: 0.5s;
+}
+section button:hover{
+    background-color:var(--azul-claro);
+}
+footer{
+    background-color: #1C3A6E;
+    color: white;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: var(--destaque);
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+footer a:hover{
+color: #7F3FBF;
+}
