@@ -52,9 +52,11 @@ header p{
     padding-bottom: 20px;
 }
 header nav{
-    padding-left: 15px;
     padding-top: 5px;
     border-top: 2px solid rgb(255, 254, 254);
+}
+nav a:hover{
+    background-color: #9fd1ff;
 }
 header a{
     color: white;
@@ -62,6 +64,9 @@ header a{
     font-family: var(--destaque);
     margin-left: 10px;
     font-size: 20px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
 }
 section div{
     background-color: white;
@@ -69,24 +74,48 @@ section div{
     border-radius: 10px;
     margin: auto;
     margin-top: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.411);
 }
 div h2{
     font-family: var(--destaque);
     font-size: 30px;
+    text-align: left;
+    padding:3px 0px 5px 10px;
+    width: 500px;
+    color: var(--azul-escuro);
+    
 }
+
 div p{
     text-indent: 8px;
     text-align: justify;
+     padding: 10px;
 
 }
-picture#img1 img{
+picture.img img{
     width: 40%;
     max-width: 300px;
+    margin-top: 20px;
+    border-radius:10px;
+    margin-bottom: 15px;
 }
-
+footer{
+    margin-top: 50px;
+    background-color: #1C3A6E;
+    color: white;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: var(--destaque);
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+footer a:hover{
+color: #7F3FBF;
+}
      </style>   
 </head>
 <body>
@@ -107,21 +136,32 @@ picture#img1 img{
             <h2>Quem sou eu</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odio est saepe quae, earum odit a aliquam, deleniti debitis quasi at ipsa voluptatum animi quos laborum nemo minus dignissimos magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit natus nihil veniam laborum quo perferendis soluta velit illum, numquam, fuga corporis voluptas voluptate eveniet hic rem delectus autem deserunt repudiandae.</p>
 
-            <picture id="img1">
+            <picture class="img">
                 <source src="../imgs/img_eu2.avif" type="image/avif">
                 <source src="../imgs/img_eu2.webp" type="image/webp">
               <img src="../imgs/img_eu2.jpg" alt="minha foto">
             </picture>
         </div>
     </section>
-    <section>
 
+    <section>
+        <div>
+           <h2>
+            Minha família
+           </h2> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio animi impedit id velit non, ut necessitatibus totam temporibus, quod illo laboriosam delectus, iure explicabo odio facere repellendus in neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab quod laborum rem animi illum exercitationem voluptas quisquam dolores odio placeat asperiores aspernatur recusandae, nam ea aut assumenda unde optio.</p>
+           <picture class="img">
+            <source src="../imgs/família.avif" type="image/avif">
+            <source src="../imgs/família.webp" type="image/webp">
+            <img src="../imgs/família.jpg" alt="Minha família">
+           </picture>
+        </div>
     </section>
     <section>
 
     </section>
     <footer>
-
+        <p>Feito por <a href="#">Cassiano Henrique da Rosa</a></p>
     </footer>
 
 </body>
