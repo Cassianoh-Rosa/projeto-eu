@@ -20,6 +20,10 @@
     padding: 0px;
     margin: 0px;
 }
+.link{
+    text-decoration: none;
+    color: white;
+}
 
 body{
     font-family: var(--texto);
