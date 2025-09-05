@@ -12,6 +12,7 @@
 
 :root{
     /* CORES */
+    --azul-preto:#1b2e6d;
     --azul-escuro: #3354c4;   /* cor principal */
     --azul-claro: #5DB1FF;    /* destaque */
     --amarelo: #FFD166;       /* ponto de atenção */
@@ -27,19 +28,112 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+font-family: var(--texto);
+background-color: rgb(181, 213, 255);
+}
+header{
+    background-color: var(--azul-escuro);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.527);
+}
+header h1{
+    color: white;
+    font-family: var(--destaque);
+    font-size: 40px;
+    padding: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+header p{
+    color: white;
+    font-family: var(--texto);
+    font-size:20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+header nav{
+    padding-top: 5px;
+    border-top: 2px solid rgb(255, 254, 254);
+    padding-bottom: 2px;
+}
+header nav a{
+     color: white;
+    text-decoration: none;
+    font-family: var(--destaque);
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 2px 10px 0px 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+nav a:hover{
+    background-color: #9fd1ff;
+}
+section > h1{
+    margin-top:20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color:var(--azul-preto );
+    font-family: var(--destaque);
+    text-decoration: underline;
+    text-align: center;
+}
+section > article{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.425);
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.sla{
+   background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.425);
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 25px; 
+}
+article > p{
+    font-family: var(--texto);
+}
+article h2{
+    color: var(--azul-escuro);
+    font-family: var(--destaque);
+}
+footer{
+    margin-top: 50px;
+    background-color: var(--azul-escuro);
+    color: white;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: var(--destaque);
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+footer a:hover{
+color: var(--azul-claro);
+}
 </style>
 </head>
 
 <body>
     <header>
         <h1>
-            Curiosidades Sobre mim!
+            Além do código
         </h1>
+
+        <p>Algumas curiosidades sobre mim &#x1F913;</p>
         
             <nav>
+                <a href="../index.html">Início</a>
                 <a href="carreira.html">Carreira</a>
                 <a href="eu.html">Sobre mim</a>
-                <a href="../index.html">Início</a>
             </nav>
     </header>
       
@@ -63,16 +157,20 @@
 
     <section>
         <h1>Minhas séries preferidas</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid inventore saepe iure quos necessitatibus, earum nesciunt aperiam eum, illum facilis et possimus dicta magni mollitia animi consequuntur dolor ea voluptates.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita obcaecati amet, architecto ipsam qui eius, enim rem nihil culpa, et porro maxime id! Ratione, accusantium. Voluptatum repudiandae recusandae officia cum!
-        </p>
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid inventore saepe iure quos necessitatibus, earum nesciunt aperiam eum, illum facilis et possimus dicta magni mollitia animi consequuntur dolor ea voluptates.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita obcaecati amet, architecto ipsam qui eius, enim rem nihil culpa, et porro maxime id! Ratione, accusantium. Voluptatum repudiandae recusandae officia cum!
+            </p>
+        </article>
     </section>
     
     <section>
         <h1>Minhas músicas preferidas</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum tenetur debitis totam facilis, labore, eveniet aspernatur asperiores voluptas ipsam quasi corporis possimus expedita quae inventore sequi ut magnam tempora!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, libero recusandae, necessitatibus saepe harum officia excepturi porro dicta assumenda animi deleniti amet aperiam et debitis tenetur ullam corrupti illo magni.
-        </p>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum tenetur debitis totam facilis, labore, eveniet aspernatur asperiores voluptas ipsam quasi corporis possimus expedita quae inventore sequi ut magnam tempora!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, libero recusandae, necessitatibus saepe harum officia excepturi porro dicta assumenda animi deleniti amet aperiam et debitis tenetur ullam corrupti illo magni.
+            </p>
+        </article>
 
     </section>
     
