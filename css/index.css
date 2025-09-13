@@ -5,7 +5,8 @@
 
 :root{
     /* CORES */
-    --azul-escuro: #2D5D9F;   /* cor principal */
+    --azul-preto:#1b2e6d;
+    --azul-escuro: #3354c4;   /* cor principal */
     --azul-claro: #5DB1FF;    /* destaque */
     --amarelo: #FFD166;       /* ponto de atenção */
     --roxo: #7F3FBF;          /* contraste */
@@ -31,32 +32,37 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--azul-escuro), #1C3A6E);
+    background-color: var(--azul-escuro);
     color: white;
     text-align: center;
     font-family: var(--destaque);
     padding: 30px 0px;
+    border-bottom: 2px solid white;
 }
-
+header h1::after{
+    content:'\1F4BB';
+}
 nav{
-    background-color: #1C3A6E;
+    background-color: var(--azul-escuro);
     margin-bottom: 10px;
     padding-bottom: 5px;
     padding-left: 15px;
+    padding-top: 5px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-family: var(--destaque);
+    font-weight: 500;
     padding: 5px;
     border-radius: 5px;
     transition-duration: 0.5s;
+    letter-spacing: 1px;
 }
 
 nav a:hover{
     background-color: var(--azul-claro);
-    color: var(--roxo);
 }
 
 main{
@@ -107,7 +113,7 @@ section button:hover{
     background-color:var(--azul-claro);
 }
 footer{
-    background-color: #1C3A6E;
+    background-color: var(--azul-preto);
     color: white;
     text-align: center;
     font-size: 1.6em;
@@ -115,9 +121,11 @@ footer{
 }
 footer a{
     color: white;
-    text-decoration: none;
     transition-duration: 0.5s;
 }
 footer a:hover{
 color: #7F3FBF;
+}
+footer a::after{
+    content: '\1F517';
 }
