@@ -13,6 +13,7 @@
 
 :root{
     /* CORES */
+    --azul-preto:#1b2e6d;
     --azul-escuro: #3354c4;   /* cor principal */
     --azul-claro: #5DB1FF;    /* destaque */
     --amarelo: #FFD166;       /* ponto de atenção */
@@ -28,40 +29,115 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    background-color:  rgba(82, 163, 240, 0.719);
+}
+header{
+    background-color: var(--azul-escuro);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.527);
+    margin-bottom: 30px;
+}
+header h1{
+    color: white;
+    font-family: var(--destaque);
+    font-size: 35px;
+    padding: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+header p{
+    color: white;
+    font-family: var(--texto);
+    font-size:20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+header nav{
+    padding-top: 5px;
+    border-top: 2px solid rgb(255, 254, 254);
+}
+nav a:hover{
+    background-color: #9fd1ff;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--destaque);
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+h2{
+    color: var(--azul-preto);
+    font-family: var(--destaque);
+    text-align: center;
+    margin-bottom: 15px;
+}
+section{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+section.normal div{
+    padding: 10px;
+    background-color: white;
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+}
+section > div > h3{
+    font-family: var(--destaque);
+    margin-bottom: 10px ;
+}
+section.img1 {
+    background-image: url('../imgs/fundo1.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
     </style>
 </head>
 <body>
-   <header>
-    <h1>
-        Minha trajetória
-    </h1>
-    <p>
-        Como começei na programação?
-    </p>
-   </header> 
+    <header>
+        <h1>
+            Minha trajetória
+        </h1>
+        <p>
+         Como começei na programação?
+        </p>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="../páginas/carreira.html">Carreira</a>
+            <a href="../páginas/eu.html">Sobre mim</a>
+            <a href="../páginas/curiosidades.html">Curiosidades</a>
+        </nav>
+   </header>
 
     <h2>
         Primeiros Passos
     </h2>
 
    <section class="normal">
-        <h3>
-            Lógica da programação
-        </h3>
         <div>
-            <p>
-                aqui irei falar sobre o curso de algoritmos
-            </p>
+            <h3>
+                Lógica da programação
+            </h3>
+                <p>
+                    aqui irei falar sobre o curso de algoritmos
+                </p>
         </div>
    </section>
 
    <h2>Aprendendo uma linguagem</h2>
 
-   <section class="img">
-        <h3>
-            Javascript
-        </h3>
+   <section class="img1">
         <div>
+            <h3>
+            Javascript
+            </h3>
             <p>
                 Aqui irei falar sobre Javascript
             </p>
@@ -71,23 +147,23 @@
    <h2>Linguages de marcação </h2>
 
    <section class="normal">
-         <h3>
-            HTML5 e CSS3
-        </h3>
-        <div>
-            <p>
-                Aqui irei falar sobre as linguagens de marcação
-            </p>
-        </div>
+         <div>
+             <h3>
+                HTML5 e CSS3
+                     </h3>
+                <p>
+                    Aqui irei falar sobre as linguagens de marcação
+                </p>
+         </div>
    </section>
 
    <h2>Hospendando sites</h2>
 
-   <section class="img">
-        <h3>
-            Git e GitHub
-        </h3>
+   <section class="img2">
         <div>
+            <h3>
+            Git e GitHub
+            </h3>
             <p>
             aqui falarei sobre git e github
             </p>
@@ -95,14 +171,14 @@
     </section>
 
     <h2>Próximos passos</h2>
-    <section>
-        <h3>
-            Oque pretendo fazer agora?
-        </h3>
+    <section class="normal">
         <div>
-            <p>
-                Aqui irei falar meus próximos passos
-            </p>
+            <h3>
+                Oque pretendo fazer agora?
+            </h3>
+                <p>
+                    Aqui irei falar meus próximos passos
+                </p>
         </div>
     </section>
 </body>
