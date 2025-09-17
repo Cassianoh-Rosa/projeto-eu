@@ -31,6 +31,7 @@
 }
 body{
     background-color:  rgba(82, 163, 240, 0.719);
+    font-family: var(--texto);
 }
 header{
     background-color: var(--azul-escuro);
@@ -54,6 +55,7 @@ header p{
 }
 header nav{
     padding-top: 5px;
+    padding-bottom: 2px;
     border-top: 2px solid rgb(255, 254, 254);
 }
 nav a:hover{
@@ -100,7 +102,41 @@ section.img1 {
     background-size: cover;
     background-attachment: fixed;
 } 
-
+.externo{
+   background-color: #5DB1FF; 
+   color: #1b2e6d;
+   font-family: var(--texto);
+   font-weight: 700;
+   text-decoration: none;
+   padding: 2px;
+   border-radius: 8px;
+}
+.externo::after{
+    content: '\1F517';
+}
+.externo:hover{
+    text-decoration: underline;
+}
+footer{
+    margin-top: 50px;
+    background-color: var(--azul-escuro);
+    color: white;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: var(--destaque);
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+footer a:hover{
+color: var(--azul-claro);
+text-decoration: underline;
+}
+footer a::after{
+    content: '\1F517';
+}
     </style>
 </head>
 <body>
@@ -129,7 +165,7 @@ section.img1 {
                 Lógica da programação
             </h3>
                 <p>
-                   Meu primeiro contato com a programação foi aos 13 anos, quando tentei aprender diretamente uma linguagem, mas por não ter uma base sólida, acabei não conseguindo avançar. Só aos 15 anos retomei os estudos, dessa vez de forma diferente: comecei pela lógica de programação, através do curso de Algoritmo do Gustavo Guanabara, no Curso em Vídeo. Nesse curso, pude entender os conceitos fundamentais que servem de alicerce para qualquer linguagem, como variáveis, operadores, estruturas condicionais, laços de repetição e até a importância de pensar passo a passo na resolução de problemas. Essa base foi essencial para que eu conseguisse evoluir de forma mais estruturada e consciente dentro da programação.
+                   Meu primeiro contato com a programação foi aos 13 anos, quando tentei aprender diretamente uma linguagem, mas por não ter uma base sólida, acabei não conseguindo avançar. Só aos 15 anos retomei os estudos, dessa vez de forma diferente: comecei pela lógica de programação, através do curso de <a href="https://www.youtube.com/watch?v=8mei6uVttho&list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV" class="externo" target="_blank">Algoritmo</a> do Gustavo Guanabara, no Curso em Vídeo. Nesse curso, pude entender os conceitos fundamentais que servem de alicerce para qualquer linguagem, como variáveis, operadores, estruturas condicionais, laços de repetição e até a importância de pensar passo a passo na resolução de problemas. Essa base foi essencial para que eu conseguisse evoluir de forma mais estruturada e consciente dentro da programação.
                 </p>
         </div>
    </section>
@@ -142,7 +178,7 @@ section.img1 {
             Javascript
             </h3>
             <p>
-                Depois de concluir a base em lógica, escolhi o JavaScript como minha primeira linguagem de programação, também através do Curso em Vídeo. No começo tive bastante dificuldade em entender a sintaxe e como aplicar os conceitos na prática, mas após alguns dias de treino e com a lógica já bem consolidada, tudo começou a fazer sentido. Aos poucos consegui compreender melhor a linguagem e percebi como ela é poderosa, principalmente por ser tão utilizada no desenvolvimento web. Esse processo me mostrou a importância da prática constante e de não desistir diante das primeiras dificuldades.
+                Depois de concluir a base em lógica, escolhi o <a href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" class="externo" target="_blank">JavaScript</a> como minha primeira linguagem de programação, também através do Curso em Vídeo. No começo tive bastante dificuldade em entender a sintaxe e como aplicar os conceitos na prática, mas após alguns dias de treino e com a lógica já bem consolidada, tudo começou a fazer sentido. Aos poucos consegui compreender melhor a linguagem e percebi como ela é poderosa, principalmente por ser tão utilizada no desenvolvimento web. Esse processo me mostrou a importância da prática constante e de não desistir diante das primeiras dificuldades.
             </p>
         </div>
    </section>
@@ -155,7 +191,7 @@ section.img1 {
                 HTML5 e CSS3
                      </h3>
                 <p>
-                    Atualmente, estou estudando HTML5 e CSS3, também pelo Curso em Vídeo, e já cheguei ao módulo 3 do curso. Com essas tecnologias, comecei a entender como estruturar páginas de forma organizada e como dar estilo e identidade visual a cada site. É uma parte muito interessante da programação, porque consigo ver na prática o resultado do que estou criando, deixando de ser apenas lógica ou código abstrato para se tornar algo visual e funcional na tela.
+                    Atualmente, estou estudando<a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" class="externo" target="_blank"> HTML5 e CSS3</a>, também pelo Curso em Vídeo, e já cheguei ao módulo 3 do curso. Com essas tecnologias, comecei a entender como estruturar páginas de forma organizada e como dar estilo e identidade visual a cada site. É uma parte muito interessante da programação, porque consigo ver na prática o resultado do que estou criando, deixando de ser apenas lógica ou código abstrato para se tornar algo visual e funcional na tela.
                 </p>
          </div>
    </section>
@@ -168,7 +204,7 @@ section.img1 {
             Git e GitHub
             </h3>
             <p>
-            Além disso, iniciei meus estudos em Git e GitHub, também com o Curso em Vídeo, para aprender a versionar meus projetos e organizar melhor meu progresso. Com essas ferramentas, passei a entender como registrar cada etapa do desenvolvimento e como compartilhar e colaborar em projetos de forma profissional. Essa etapa tem sido muito importante, porque me aproxima ainda mais de práticas usadas no mercado de trabalho.
+            Além disso, iniciei meus estudos em <a href="https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA" class="externo" target="_blank">Git e GitHub</a>, também com o Curso em Vídeo, para aprender a versionar meus projetos e organizar melhor meu progresso. Com essas ferramentas, passei a entender como registrar cada etapa do desenvolvimento e como compartilhar e colaborar em projetos de forma profissional. Essa etapa tem sido muito importante, porque me aproxima ainda mais de práticas usadas no mercado de trabalho.
             </p>
         </div>
     </section>
@@ -185,5 +221,10 @@ section.img1 {
                 <p>Após aprender tudo isso, quero me candidatar para uma vaga de estágio nessa área que tanto amo e dar orgulho para minha família.</p>
         </div>
     </section>
+    <footer>
+        <p>
+            Feito por <a href="https://github.com/Cassianoh-Rosa" target="_blank">Cassiano Henrique da Rosa</a>
+        </p>
+    </footer>
 </body>
 </html>
